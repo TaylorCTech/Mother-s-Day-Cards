@@ -13,7 +13,6 @@
     --earthy-6: #e08e70;
     --earthy-7: #de634d;
     --earthy-8: #ab613c;
-
 }
 
 body {
@@ -26,9 +25,9 @@ body {
 
 header {
     justify-self: center;
-    width: 1400px;
+    width: 80%;
     height: 75px;
-    border: 2px solid var(--earthy-2);
+    border: 3px solid var(--earthy-2);
     background-color: var(--earthy-3);
     border-radius: 0 0 5px 5px;
     display: flex;
@@ -52,7 +51,7 @@ header {
   }
 
 .box1 {
-    border: 2px solid var(--earthy-2);
+    border: 3px solid var(--earthy-2);
     background-color: var(--earthy-6);
     width: 500px;
     min-height: 500px;
@@ -66,7 +65,7 @@ header {
   }
 
 .box2 {
-    border: 2px solid var(--earthy-2);
+    border: 3px solid var(--earthy-2);
     background-color: var(--earthy-6);
     width: 500px;
     min-height: 500px;
@@ -78,6 +77,10 @@ header {
     justify-content: space-between;
     align-items: center;
   }
+
+p {
+  font-size: 1.1rem;
+}
 
   .pic__container {
     width: 415px;
@@ -122,7 +125,7 @@ header {
   }
 
 .box3 {
-    border: 2px solid var(--earthy-2);
+    border: 3px solid var(--earthy-2);
     background-color: var(--earthy-6);
     width: 600px;
     min-height: 600px;
@@ -135,7 +138,7 @@ header {
 .image__container {
     width: 375px;
     height: 350px;
-    border: 2px solid var(--earthy-2);
+    border: 3px solid var(--earthy-2);
     border-radius: 15px;
     justify-self: center;
     margin-top: 25px;
@@ -191,3 +194,68 @@ img {
   padding: 10px;
   border-radius: 100vw;
 }
+
+/* 
+Start of Phone Responsiveness
+*/
+
+@media only screen and (max-width: 720px) and (orientation: portrait)
+{ 
+  header {
+    width: 70%;
+  };
+
+  #main__container {
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 80vw;
+    margin: 10px auto 10px auto;
+    padding: 5px;
+    margin: 10px auto ;
+    padding: auto;
+  }
+
+  .box1 {
+    border: 3px solid var(--earthy-2);
+    background-color: var(--earthy-6);
+    width: 500px;
+    min-height: 500px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.box2 {
+    border: 3px solid var(--earthy-2);
+    background-color: var(--earthy-6);
+    width: 500px;
+    min-height: 500px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .image__container {
+    width: 75%;
+    height: 85%;
+    margin-bottom: 0;
+  }
+
+  p {
+    margin: 10px 20px;
+    padding: 20px;
+    font-size: 1.2rem;
+  }
+
+ }
