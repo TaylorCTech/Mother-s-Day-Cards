@@ -15,6 +15,7 @@
     --earthy-8: #ab613c;
 }
 
+
 body {
     background: var(--earthy-8);
 }
@@ -197,7 +198,14 @@ img {
 }
 
 /* 
-Start of Phone Responsiveness
+Start of Mobile Responsiveness
+
+iPhone SE = 375w x 667h
+
+Galaxy = 360w x 740px
+
+
+
 */
 
 @media screen and (orientation: portrait)
@@ -208,8 +216,8 @@ Start of Phone Responsiveness
 
   header {
     justify-self: center;
-    width: 80%;
-    height: 75px;
+    width: 80vw;
+    height: calc(max-content + 5rem);
     border: 3px solid var(--earthy-2);
     background-color: var(--earthy-3);
     border-radius: 0 0 5px 5px;
@@ -236,8 +244,8 @@ Start of Phone Responsiveness
   .box1 {
     border: 3px solid var(--earthy-2);
     background-color: var(--earthy-6);
-    width: 100%;
-    min-height: 400px;
+    width: 70vw;
+    min-height: calc(max-content + 5rem);
     border-radius: 10px;
     padding: 10px;
     margin-top: 10px;
@@ -250,8 +258,8 @@ Start of Phone Responsiveness
 .box2 {
     border: 3px solid var(--earthy-2);
     background-color: var(--earthy-6);
-    width: 100%;
-    min-height: 400px;
+    width: 70vw;
+    min-height: calc(max-content + 5rem);
     border-radius: 10px;
     padding: 10px;
     margin-top: 10px;
@@ -262,10 +270,11 @@ Start of Phone Responsiveness
   }
 
 p {
-  font-size: 1.1rem;
+  text-align: center;
+  max-width: calc(inherit - 15%);
+  font-size: clamp(0.8rem, 1.2rem, 1.5rem);
   padding: 5px;
   margin: 5px;
-  width: 85%;
 }
 
   .pic__container {
@@ -331,7 +340,7 @@ p {
   }
 
   .image__container {
-    width: 75%;
+    width: 65%;
     height: 85%;
     margin-bottom: 0;
   }
@@ -370,3 +379,4 @@ p {
     padding: 2px;
   }
 }
+
